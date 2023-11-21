@@ -1,6 +1,8 @@
 package br.com.jessicalvs.gameList.model
 
 import java.lang.IllegalArgumentException
+import java.time.LocalDate
+import java.time.Period
 import java.util.Scanner
 import kotlin.random.Random
 
@@ -33,12 +35,12 @@ data class Gamer(var name: String, var email: String) {
     }
 
     override fun toString(): String {
-        return "Gamer\n" +
+        return "\nGamer Data\n" +
                 "name : $name" +
                 "\nemail: $email" +
                 "\nbirthdate: $birthdate" +
-                "\nnusername: $username" +
-                "\nid: $id"
+                "\nusername: $username" +
+                "\nid: $id\n"
     }
 
     fun createID() {
@@ -56,6 +58,11 @@ data class Gamer(var name: String, var email: String) {
         } else {
             throw IllegalArgumentException("Invalid e-mail")
         }
+    }
+
+    fun rentGame (game : Game, period: PeriodRental) : Rent{
+
+        return Rent(this, game, period)
     }
 
     companion object{
