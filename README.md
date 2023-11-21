@@ -1,5 +1,4 @@
-# gameRent
-## Kotlin API Consumption Project
+# gameRent - Kotlin API Consumption Project
 
 ### Description
 
