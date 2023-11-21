@@ -48,7 +48,7 @@ This command will clean the project, install all dependencies, and then run the 
 
 The project is divided into two main packages:
 
-`br.com.jessicalvs.gameList`: contains the classes responsible for consuming data from the CheapShark API.
+`br.com.jessicalvs.gameList*: contains the classes responsible for consuming data from the CheapShark API.
 The Main class is the main class of the application. It is responsible for starting the game search and displaying the list on the screen.
 
 ### Conclusion
@@ -59,7 +59,6 @@ This project is a good starting point for learning how to consume external data 
 
 In the next stages, the project will be expanded to implement the following features:
 
-Filtering games by platform, genre, and price.
-Sorting games by price, rating, or popularity.
-Saving favorite games to the device.
-Contributions are welcome! If you have any suggestions or corrections, feel free to open an issue or pull request.
+* Filtering games by platform, genre, and price.
+* Sorting games by price, rating, or popularity.
+* Saving favorite games to the device.
