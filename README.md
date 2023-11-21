@@ -48,7 +48,7 @@ This command will clean the project, install all dependencies, and then run the 
 
 The project is divided into two main packages:
 
-`br.com.jessicalvs.gameList*: contains the classes responsible for consuming data from the CheapShark API.
+`br.com.jessicalvs.gameList `: contains the classes responsible for consuming data from the CheapShark API.
 The Main class is the main class of the application. It is responsible for starting the game search and displaying the list on the screen.
 
 ### Conclusion
