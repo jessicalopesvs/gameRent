@@ -1,7 +1,7 @@
 # gameRent
-##Kotlin API Consumption Project
+## Kotlin API Consumption Project
 
-###Description
+### Description
 
 This project aims to consume external data from an API using Kotlin. For this, we used the CheapShark API, which provides a list of games, price-related information, such as stores with cheaper prices, and game cover information.
 
@@ -26,18 +26,18 @@ To run the project, you will need to have Kotlin installed on your machine. Then
 ./gradlew run
 This will start the application, which will display a list of games on the screen.
 
-###Architecture
+### Architecture
 
 The project is divided into two main packages:
 
 br.com.jessicalvs.gameList: contains the classes responsible for consuming data from the CheapShark API.
 The Main class is the main class of the application. It is responsible for starting the game search and displaying the list on the screen.
 
-###Conclusion
+### Conclusion
 
 This project is a good starting point for learning how to consume external data from an API using Kotlin. It addresses important object-oriented concepts, such as class modeling, encapsulation, JSON deserialization, and exception handling.
 
-Next steps
+### Next steps
 
 In the next stages, the project will be expanded to implement the following features:
 
