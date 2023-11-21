@@ -12,13 +12,15 @@ Deserializing JSON into an object created by us: the game.
 Exception handling, using the specific syntax of Kotlin: `runCatching().`
 Using scope functions and extension functions to override and extend important behaviors in classes.
 Saving the game search in a list by sorting and manipulating.
-Technologies Used
 
-Kotlin
-CheapShark API
-Retrofit
-Gson
-How to Run
+### Technologies Used:
+
+* Kotlin
+* CheapShark API
+* Retrofit
+* Gson
+
+### How to Run
 
 To run a Kotlin project using Maven and Git, follow these steps:
 
@@ -48,7 +50,7 @@ This command will clean the project, install all dependencies, and then run the 
 
 The project is divided into two main packages:
 
-`br.com.jessicalvs.gameList `: contains the classes responsible for consuming data from the CheapShark API.
+`br.com.jessicalvs.gameList : contains the classes responsible for consuming data from the CheapShark API.
 The Main class is the main class of the application. It is responsible for starting the game search and displaying the list on the screen.
 
 ### Conclusion
