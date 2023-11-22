@@ -10,6 +10,8 @@ data class Rent (
     val period : PeriodRental){
 
     val rentPrice = gamer.subscription.getRentValue(this)
+    var id : String? = null
+
 
 
     override fun toString(): String {
