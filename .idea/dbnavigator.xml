@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,14 +13,14 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="433fd75b-d338-4382-aa8e-0428d7616dbe">
-      <console name="Connection" type="STANDARD" schema="gameRent" session="Main"><![CDATA[select
+      <console name="Connection" type="STANDARD" schema="gameRent" session="Main">select
     g.id,
     g.description,
     g.price,
     g.thumb,
     g.title
 from
-    games g;]]></console>
+    games g;</console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -28,10 +28,20 @@ from
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files>
-      <object connection-id="433fd75b-d338-4382-aa8e-0428d7616dbe" object-ref="schemas/gameRent/tables/games" />
+      <object connection-id="d2ed82ea-4588-488f-a563-fd2eec42fc8f" object-ref="schemas/gameRent/tables/games" />
+      <object connection-id="d2ed82ea-4588-488f-a563-fd2eec42fc8f" object-ref="schemas/gameRent/tables/Subscription" />
     </open-files>
   </component>
+  <component name="DBNavigator.Project.DatabaseSessionManager">
+    <connection id="433fd75b-d338-4382-aa8e-0428d7616dbe" />
+  </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="d2ed82ea-4588-488f-a563-fd2eec42fc8f" dataset="gameRent.Subscription" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="d2ed82ea-4588-488f-a563-fd2eec42fc8f" dataset="gameRent.gamer" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="d2ed82ea-4588-488f-a563-fd2eec42fc8f" dataset="gameRent.games" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="433fd75b-d338-4382-aa8e-0428d7616dbe" dataset="gameRent.Subscription" active-filter-id="" />
+    <filter-actions connection-id="433fd75b-d338-4382-aa8e-0428d7616dbe" dataset="gameRent.subscriptions" active-filter-id="" />
+    <filter-actions connection-id="433fd75b-d338-4382-aa8e-0428d7616dbe" dataset="gameRent.gamer" active-filter-id="" />
     <filter-actions connection-id="433fd75b-d338-4382-aa8e-0428d7616dbe" dataset="gameRent.games" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">

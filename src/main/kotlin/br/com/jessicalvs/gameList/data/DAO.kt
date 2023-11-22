@@ -20,9 +20,17 @@ abstract class DAO<T, Entity>(protected val manager: EntityManager, val entityTy
     //template method
     open fun add(obj: T) {
         val entity = toEntity(obj)
-        manager.transaction.begin()
-        manager.persist(entity)
-        manager.transaction.commit()
+        val transaction = manager.transaction
+        try {
+            transaction.begin()
+            manager.persist(entity)
+            transaction.commit()
+        } catch (e: Exception) {
+            if (transaction.isActive) {
+                transaction.rollback()
+            }
+            throw e
+        }
     }
 
     open fun getById(id: Int): T {

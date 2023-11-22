@@ -1,7 +1,7 @@
 package br.com.jessicalvs.gameList.model
 
-class SubscriptionFree(type : String) : Subscription(type){
-    override var id : String? = null
+class SubscriptionFree(type: String, id: Int?) : Subscription(type){
+    override var id : Int? = null
 
 
     override fun getRentValue(rent: Rent): Double {

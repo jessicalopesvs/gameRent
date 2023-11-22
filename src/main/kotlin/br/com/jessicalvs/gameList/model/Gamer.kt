@@ -8,18 +8,12 @@ data class Gamer(var name: String, var email: String) : Recommendation {
     var birthdate: String? = null
     var username: String? = null
         //setting id
-        set(value) {
-            field = value
-            if (id.isNullOrBlank()) {
-                createID();
-            }
-        }
-    var id: String? = null
-        private set
+
+    var id: Int? = null
     val searches = mutableListOf<Game?>()
     val rentedGames = mutableListOf<Rent?>()
 
-    var subscription: Subscription = SubscriptionFree("BRONZE")
+    var subscription: Subscription = SubscriptionFree("BRONZE", id)
 
 
     constructor(name: String, email: String, birthdate: String, username: String) :
@@ -27,6 +21,9 @@ data class Gamer(var name: String, var email: String) : Recommendation {
         this.birthdate = birthdate
         this.username = username
     }
+
+    constructor(name: String, email: String, birthdate: String?, username: String?, id: Int?) : this(name, email)
+
 
     init {
         if (name.isNullOrBlank()) {
@@ -45,12 +42,6 @@ data class Gamer(var name: String, var email: String) : Recommendation {
                 "Reputation: ${avg}"
     }
 
-    fun createID() {
-        val randomNum = Random.nextInt(1000)
-        val tag = String.format("%04d", randomNum)
-
-        id = "$username#$tag"
-    }
 
 
     fun validateEmail(): String {

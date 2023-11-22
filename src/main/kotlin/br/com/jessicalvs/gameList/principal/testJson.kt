@@ -1,6 +1,5 @@
 package br.com.jessicalvs.gameList.principal
 
-import br.com.jessicalvs.gameList.model.Gamer
 import br.com.jessicalvs.gameList.model.PeriodRental
 import br.com.jessicalvs.gameList.model.SubscriptionPaid
 import br.com.jessicalvs.gameList.services.APIcall
@@ -36,7 +35,7 @@ fun main() {
 
 
     val gamerCamila = listGamers.get(5)
-    gamerCamila.subscription = SubscriptionPaid("PRATA",9.90,0, 0.2)
+//    gamerCamila.subscription = SubscriptionPaid("PRATA", 9.90, 0, 0.2, id)
     val rent5 = gamerCamila.rentGame(gameRED, period)
     val rent6 = gamerCamila.rentGame(game2, period2)
 

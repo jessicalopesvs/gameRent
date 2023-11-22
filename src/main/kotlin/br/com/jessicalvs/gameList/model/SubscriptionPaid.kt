@@ -1,8 +1,10 @@
 package br.com.jessicalvs.gameList.model
 
-class SubscriptionPaid(type : String, val fee : Double,
-                       val gamesIncluded : Int, private val discountPercent : Double) : Subscription(type) {
-    override var id : String? = null
+class SubscriptionPaid(
+    type: String, val fee: Double,
+    val gamesIncluded: Int, val discountPercent: Double, id: Int?
+) : Subscription(type) {
+    override var id : Int? = null
 
 
     override fun getRentValue(rent: Rent): Double {
