@@ -2,6 +2,8 @@ package br.com.jessicalvs.gameList.model
 
 class SubscriptionPaid(type : String, val fee : Double,
                        val gamesIncluded : Int, private val discountPercent : Double) : Subscription(type) {
+    override var id : String? = null
+
 
     override fun getRentValue(rent: Rent): Double {
         val totalGamesMonth = rent.gamer.monthlyGamesRent(rent.period.date.monthValue).size+1
@@ -15,6 +17,10 @@ class SubscriptionPaid(type : String, val fee : Double,
             }
             return originalPrice
         }
+    }
+
+    override fun toString(): String {
+        return super.toString()
     }
 
 }
